@@ -13,6 +13,7 @@
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
@@ -65,10 +66,19 @@
 		<div class="container">
 			<div class="row" id="slidetop">
 				<h1>slidebar</h1>
+				
 			</div>
 
 			<div class="row" id="slidebar">
-				<h1>slidebar</h1>
+				<!-- <h1>slidebar</h1> -->
+				<img class="mySlides" id="img_size" src="src\1.jpg" >
+			    <img class="mySlides" id="img_size" src="src\2.jpg" >
+			    <img class="mySlides" id="img_size" src="src\3.jpg" >
+			    <div class="slide_button" style="width:100%">
+			    	<span class="w3-badge demo w3-border w3-transparent w3-hover-white fa fa-circle-o" onclick="currentDiv(1)"></span>
+			    	<span class="w3-badge demo w3-border w3-transparent w3-hover-white fa fa-circle-o" onclick="currentDiv(2)"></span>
+			    	<span class="w3-badge demo w3-border w3-transparent w3-hover-white fa fa-circle-o" onclick="currentDiv(3)"></span>
+			  	</div>
 			</div>
 
 			<div class="row" id="fieldbar">
@@ -301,7 +311,7 @@
 				<p>Copyright © 2017 eCom.com.bd All rights reserved.</p>
 			</div>
 		</footer>
-		<button onclick="topFunction()" class="back-to-top" title="Go to top"><span class="fa fa-angle-double-up"></span></button>
+		<button class="back-to-top" title="Go to top"><span class="fa fa-angle-double-up"></span></button>
 	</body>
 
 	<script>
@@ -322,6 +332,53 @@
 		        return false;
 		    })
 		});
+	</script>
+
+	<script>
+		var myIndex = 0;
+		carousel();
+
+		function carousel() {
+		    var i;
+		    var x = document.getElementsByClassName("mySlides");
+		    var dots = document.getElementsByClassName("demo");
+		    for (i = 0; i < x.length; i++) {
+		       x[i].style.display = "none";  
+		    }
+		    myIndex++;
+		    if (myIndex > x.length) {myIndex = 1}    
+		    x[myIndex-1].style.display = "block";
+
+			for (i = 0; i < dots.length; i++) {
+		     dots[i].className = dots[i].className.replace(" w3-white", "");
+			  }
+			  x[myIndex-1].style.display = "block";  
+			  dots[myIndex-1].className += " w3-white";
+
+		    setTimeout(carousel, 6000); // Change image every 6 seconds
+		}
+
+		showDivs(myIndex);
+
+		function currentDiv(n) {
+		  showDivs(myIndex = n);
+		}
+
+		function showDivs(n) {
+		  var i;
+		  var x = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("demo");
+		  if (n > x.length) {myIndex = 1}    
+		  if (n < 1) {myIndex = x.length}
+		  for (i = 0; i < x.length; i++) {
+		     x[i].style.display = "none";  
+		  }
+		  for (i = 0; i < dots.length; i++) {
+		     dots[i].className = dots[i].className.replace(" w3-white", "");
+		  }
+		  x[myIndex-1].style.display = "block";  
+		  dots[myIndex-1].className += " w3-white";
+		}
 	</script>
 
 </html>

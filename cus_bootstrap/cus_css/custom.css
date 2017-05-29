@@ -27,13 +27,18 @@ body {
 }
 
 #slidebar{
-  border-style: dotted;
+  /*border-style: dotted;
   border-color: #EE2A2A;
-  background-color: #000000;
-  height: 250px;
+  background-color: #000000;*/
+  height: 350px;
   margin-top: 15px;
   margin-bottom: 10px;
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#img_size{
+  height: 350px;
+  width: 100%;
 }
 
 #fieldbar{
@@ -165,5 +170,22 @@ body {
 }
 
 .back-to-top:hover {    
-    background-color: rgba(135, 135, 135, 0.50);
+  background-color: rgba(135, 135, 135, 0.50);
+}
+
+.mySlides {display:none;}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+.w3-white,.w3-hover-white:hover{color:#000!important;background-color:#fff!important}
+.w3-transparent,.w3-hover-none:hover{background-color:transparent!important}
+.w3-border-red,.w3-hover-border-red:hover{border-color:#f44336!important}
+.w3-badge,.w3-tag{background-color:#000;color:#fff;display:inline-block;padding-left:1px;padding-right:0px;text-align:center}
+.w3-badge{border-radius:90%}
+
+.slide_button{
+  /*border-style: dashed;*/
+  padding: 6px;
+  position: relative;
+  bottom: 50px;
+  text-align: center;
 }
