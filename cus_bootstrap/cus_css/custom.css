@@ -50,6 +50,18 @@ body {
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+#reg_fieldbar{
+  /*border-style: dashed;*/
+  background-color:  #E3FFFF;
+  margin-top: 8%;
+  margin-bottom: 10px;
+  padding-bottom: 50px;
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.form-group .reg_padding-left {
+  padding-left: 0px;
+}
+
 #adbox{
   background-color: #000000;
   min-height: 300px;
@@ -61,12 +73,34 @@ body {
     /*border-style: dashed;*/
     letter-spacing: 0.5px;
     line-height: 32px;
+    text-align: center;
     margin: 0;
     max-height: 64px;
-    padding: 10px 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
     width: 100%;
     word-spacing: 1px;
 }
+#reg_linebar{
+    color: #000;
+    /*border-style: dashed;*/
+    letter-spacing: 0.5px;
+    text-align: center;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    word-spacing: 1px;
+}
+
+#bottomLine{
+  font-family: "Open Sans",sans-serif;
+  border-bottom: 1px solid #CCCCCC;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
 
 #field_8{
     min-height: 1px;
@@ -188,4 +222,15 @@ body {
   position: relative;
   bottom: 50px;
   text-align: center;
+}
+
+.reg_button{
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.reg_form_display{
+  padding-left: 30px;
+  padding-right: 30px;
 }
