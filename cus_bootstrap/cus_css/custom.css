@@ -184,7 +184,7 @@ body {
   font-size: 14px;
   padding-top: 10px;
   text-align: center;
-  height: 40px;
+  min-height: 40px;
   background-color:  #010439;
 }
 
