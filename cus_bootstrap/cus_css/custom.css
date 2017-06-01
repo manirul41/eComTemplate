@@ -71,9 +71,11 @@ body {
     border-bottom: 1px solid #ccc;
     color: #000;
     /*border-style: dashed;*/
+    font-family: Roboto,Arial,sans-serif;
+    font-size: 20px !important;
     letter-spacing: 0.5px;
     line-height: 32px;
-    text-align: center;
+    text-align: justify;
     margin: 0;
     max-height: 64px;
     padding-top: 10px;
