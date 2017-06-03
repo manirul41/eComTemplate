@@ -21,7 +21,7 @@
 
 	<body>
 		<div id="colorbody">
-			<nav class="navbar navbar-inverse navbar-fixed-top">
+			<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="topnavbar">
 			  <div class="container-fluid">
 			    <div class="navbar-header">
 			      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -659,6 +659,14 @@
 		  x[myIndex-1].style.display = "block";  
 		  dots[myIndex-1].className += " w3-white";
 		}
+	</script>
+	<script>
+	    $(document).ready(function(){
+	        $(document.body).css('padding-top', $('#topnavbar').height() + 1);
+	        $(window).resize(function(){
+	            $(document.body).css('padding-top', $('#topnavbar').height() + 1);
+	        });
+	    });
 	</script>
 
 </html>

@@ -11,6 +11,12 @@ body {
   padding: 50px 0px 0 0;
   margin: 0;
 }
+@media (max-width: 979px) {
+  body {
+    padding-top: 0px;
+  }
+}
+
 #colorbody{
   background-color:  #ebebea;
   z-index: -5000;
@@ -53,7 +59,7 @@ body {
 #reg_fieldbar{
   /*border-style: dashed;*/
   background-color:  #E3FFFF;
-  margin-top: 8%;
+  /*margin-top: 8%;*/
   margin-bottom: 10px;
   padding-bottom: 50px;
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
