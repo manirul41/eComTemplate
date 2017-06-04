@@ -1,0 +1,38 @@
+#input-sort{
+	width: 100%;
+	float: left;
+}
+
+#input-show{
+
+	float: left;
+}
+
+#contain{
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 20px;
+}
+
+#productArea{
+	padding-top: 20px;
+}
+
+#singlePro{
+	padding-left: 45px;
+    padding-right: 45px;
+    text-align: left;
+}
+
+#proImage{
+	border-style: dashed;
+    float: none;
+    max-height: 300px;
+    padding: 0 31px;
+    text-align: center;
+    max-width: 270px;
+}
+
+#proPrice{
+	color: #0080cc;
+    font-weight: 600;
+}
