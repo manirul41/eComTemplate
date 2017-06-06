@@ -242,3 +242,29 @@ body {
   padding-left: 30px;
   padding-right: 30px;
 }
+
+.cus_sc_body{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+ 
+#cus_no_padding_left{
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 0;
+  position: relative;
+}
+.cus_buttons{
+  padding-bottom: 10px;
+}
+.btn.btn-primary.checkbtn {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    min-width: 160px;
+}
+
+#cus_default_payinfo_size{
+  height: 90%;
+  width: 90%;
+}
