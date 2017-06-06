@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+		<title>eCom::Home</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<!-- <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script> -->
+		<script type="text/javascript" src="cus_bootstrap/cus_js/custom.js"></script>
+		<!-- <script type="text/javascript" src="cus_bootstrap/cus_js/jquery.elevatezoom.js"></script>
+		// <script type="text/javascript" src="cus_bootstrap/cus_js/jquery-1.8.3.min.js"></script> -->
+
+
+		<link href="cus_bootstrap/cus_css/custom.css" rel="stylesheet">
+		<link href="cus_bootstrap/cus_css/showProduct.css" rel="stylesheet">
+
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+	    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+
+
+
+	</head>
+
+	<body>
+
+		<div id="colorbody">
+			<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="topnavbar">
+			  <div class="container-fluid">
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>                        
+			      </button>
+			      <a class="navbar-brand" href="#">eCom</a>
+			    </div>
+			    <div class="collapse navbar-collapse" id="myNavbar">
+			      <ul class="nav navbar-nav">
+			        <li class="active"><a href="#">Home</a></li>
+			        <li class="dropdown">
+			          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+			          <ul class="dropdown-menu">
+			            <li><a href="#">Page 1-1</a></li>
+			            <li><a href="#">Page 1-2</a></li>
+			            <li><a href="#">Page 1-3</a></li>
+			          </ul>
+			        </li>
+			        <li><a href="#">Page 2</a></li>
+			        <li><a href="#">Page 3</a></li>
+			      </ul>
+			       <form class="navbar-form navbar-left">
+					  <div class="input-group">
+					    <input type="text" class="form-control" placeholder="Search">
+					    <div class="input-group-btn">
+					      <button class="btn btn-default" type="submit">
+					        <i class="glyphicon glyphicon-search"></i>
+					      </button>
+					    </div>
+					  </div>
+					</form> 
+			      <ul class="nav navbar-nav navbar-right">
+			      	<li><a href="#"><button type="button" class="btn btn-primary fa fa-shopping-cart"> (0) Cart</button></a></li>
+			        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+			        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+			      </ul>
+			    </div>
+			  </div>
+			</nav> <!-- default section for all pages -->
+
+			<div class="container">
+				<div class="panel panel-default"><!-- Contain page section -->
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-md-8">
+								<div class="picZoomer">
+									<div class="image">
+										<img id="mainImage" src="src\5.jpg"/>
+									</div>
+									<br />
+									<div class="large"></div>
+								</div>
+							    <div id="imgDiv" onclick="changeImageOnClick(event)">
+							        <img class="imgStyle" src="src\5.jpg" />
+							        <img class="imgStyle" src="src\6.jpg" />
+							        <img class="imgStyle" src="src\7.jpg" />
+							        <img class="imgStyle" src="src\8.jpg" />
+
+							    </div>
+								
+								<ul class="nav nav-tabs">
+									<li class="active">
+										<a href="#tab-description" data-toggle="tab" aria-expanded="true">Overview</a>
+									</li>
+									<li>
+										<a href="#tab-newtabcontent" data-toggle="tab"></a>
+									</li>
+									<li class="">
+										<a href="#tab-specification" data-toggle="tab" aria-expanded="false">Specification</a>
+									</li>
+									<li class="">
+										<a href="#tab-review" data-toggle="tab" aria-expanded="false">Reviews (0)</a>
+									</li>
+								</ul>
+								<div class="tab-content">
+									<div id="tab-description" class="tab-pane active">
+										<div class="row">
+											<div class="col-lg-4">
+												<h3>Key Features</h3>
+												<p class="usally">Android 6.0 (Marshmallow)</p>
+												<p class="usally">Camera 8 Mp</p>
+												<p class="usally">Ram 2 Gb</p>
+												<p class="usally">
+												<br>
+												</p>
+											</div>
+											<div class="col-lg-4">
+												<h3>Warranty</h3>
+												<p class="usally">
+												180 Days Replacement warranty
+												<br>
+												</p>
+												<p class="usally">
+												3-Days Replacement Policy 
+												<br>
+												</p>
+												<p class="usally">100% Genuine Products </p>
+											</div>
+											<div class="col-lg-4">
+												<h3>Delivered By?</h3>
+												<p class="usally">Usually Delivered in 2-3 business days.</p>
+												<p class="usally">Cash On Delivery?</p>
+											</div>
+											<div class="row">
+												<div class="col-sm-12">
+												<img class="idolspeimg" src="src\delivery.jpg" alt="coolpad mega 3">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div id="tab-specification" class="tab-pane">
+										<div class="row">
+											<div class="col-lg-12">
+												<h3>Key Features</h3>
+												<p class="usally">Android 6.0 (Marshmallow)</p>
+												<p class="usally">Camera 8 Mp</p>
+												<p class="usally">Ram 2 Gb</p>
+												<p class="usally">
+												<br>
+												</p>
+											</div>
+										</div>
+									</div>
+									<div id="tab-review" class="tab-pane">
+										<form id="form-review" class="form-horizontal">
+											<div id="review">
+												<p>There are no reviews for this product.</p>
+											</div>
+											<h2>Write a review</h2>
+											<div class="form-group required">
+												<div class="col-sm-12">
+													<label class="control-label" for="input-name">Your Name</label>
+													<input id="input-name" class="form-control" name="name" value="" type="text">
+												</div>
+											</div>
+											<div class="form-group required">
+												<div class="col-sm-12">
+													<label class="control-label" for="input-review">Your Review</label>
+													<textarea id="input-review" class="form-control" name="text" rows="5"></textarea>
+													<div class="help-block">
+														<span class="text-danger">Note:</span>
+														HTML is not translated!
+													</div>
+												</div>
+											</div>
+											<div class="form-group required">
+												<div class="col-sm-12">
+													<label class="control-label">Rating</label>
+													    Bad 
+													<input name="rating" value="1" type="radio">
+													<input name="rating" value="2" type="radio">
+													<input name="rating" value="3" type="radio">
+													<input name="rating" value="4" type="radio">
+													<input name="rating" value="5" type="radio">
+													 Good
+												</div>
+											</div>
+											
+											<div class="buttons clearfix">
+											<div class="pull-right">
+											<button id="button-review" class="btn btn-primary" type="button" data-loading-text="Loading...">Continue</button>
+											</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="btn-group">
+									<button class="btn btn-default" type="button" data-toggle="tooltip" title="Add to Wish List" onclick="#">
+									<i class="fa fa-heart"></i>
+									</button>
+									<button class="btn btn-default" type="button" data-toggle="tooltip" title="Compare this Product" onclick="#">
+									<i class="fa fa-exchange"></i>
+									</button>
+								</div>
+								<h4>Title: Product Name</h4>
+								<ul class="list-unstyled">
+									<li>
+									Brand:
+									<a href="https://www.buymobile.com.bd/index.php?route=product/manufacturer/info&manufacturer_id=14">htc</a>
+									</li>
+									<li>Product Code: HTC Desire 326G DS</li>
+									<li class="instock">Availability: In Stock</li>
+								</ul>
+								<ul class="list-unstyled">
+									<li>
+									<h2> Price: TK 10,990.00</h2>
+									</li>
+								</ul>
+								<div id="product">
+									<div class="form-group emi">
+										<label class="control-label" for="input-option440">EMI</label>
+										<select id="input-option440" class="form-control buy_emi" name="option[440]" onchange="onoptionselected()">
+											<option value=""> --- Please Select --- </option>
+											<option value="1">Yes </option>
+										</select>
+									</div>
+									<div class="form-group month" id="showMonth">
+										<label class="control-label" for="input-option477">month</label>
+										<select id="input-option477" class="form-control buy_month" name="option[477]">
+											<option value=""> --- Please Select --- </option>
+											<option value="617">3 </option>
+										</select>
+									</div>
+									<div class="form-group required">
+										<label class="hed-color control-label">Color</label>
+										<div id="input-option494">
+											<div class="radio">
+												<label>
+												<input name="option[494]" value="661" type="radio">
+												Silver
+												</label>
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="control-label" for="input-quantity">Qty</label>
+										<input id="input-quantity" class="form-control" name="quantity" value="1" size="2" type="text">
+										<input name="product_id" value="309" type="hidden">
+										<br>
+										<button id="button-cart" class="buynowbt instock" type="button" data-loading-text="Loading...">Buy Now</button>
+									</div>
+								</div>
+								<div class="rating">
+									<p>
+										<span class="fa fa-stack">
+										<i class="fa fa-star-o fa-stack-1x"></i>
+										</span>
+										<span class="fa fa-stack">
+										<i class="fa fa-star-o fa-stack-1x"></i>
+										</span>
+										<span class="fa fa-stack">
+										<i class="fa fa-star-o fa-stack-1x"></i>
+										</span>
+										<span class="fa fa-stack">
+										<i class="fa fa-star-o fa-stack-1x"></i>
+										</span>
+										<span class="fa fa-stack">
+										<i class="fa fa-star-o fa-stack-1x"></i>
+										</span>
+										<a href="" onclick="$('a[href=\'#tab-review\']').trigger('click'); return false;">0 reviews</a>
+										/
+										<a href="" onclick="$('a[href=\'#tab-review\']').trigger('click'); return false;">Write a review</a>
+									</p>
+									<hr>
+								</div>
+								<div clas="col-md-12">
+									<img class="secureimg" src="src\payad1.jpg" alt="buymobile">
+								</div>
+								<div clas="col-md-12">
+									<a href="http://www.buymobile.com.bd/payment">
+									<img class="secureimg" src="src\payad2.jpg" alt="buymobile">
+									</a>
+								</div>
+								<div clas="col-md-12">
+									<a href="http://www.buymobile.com.bd/delivery">
+									<img class="secureimg" src="src\delivery.jpg" alt="buymobile">
+									</a>
+								</div>
+							</div>
+							<div class="tags col-md-8">
+								<p>
+									Tags:
+									<a href="#">Coolpad note 5</a>,
+									<a href="#">Coolpad Mobile</a>,
+									<a href="#">Coolpad Mobile</a>,
+									<a href="#">Coolpad Mobile</a>,
+									<a href="#">Coolpad Mobile</a>,
+									<a href="#">Coolpad Mobile</a>,
+									<a href="#">Coolpad Mobile</a>,
+									<a href="#">Coolpad Mobile</a>,
+									<a href="#">Coolpad Mobile</a>,
+									<a href="#">Coolpad Mobile</a>,
+									<a href="#">Coolpad Mobile</a>,
+									<a href="#">Coolpad Mobile</a>,
+									<a href="#">Coolpad Mobile</a>,
+									<a href="#">Coolpad Mobile</a>
+								</p>
+							</div>
+						</div> <!-- End row -->
+					</div>
+				</div> <!-- End contain page section-->
+			</div> <!-- end container -->
+		</div>
+
+		<!-- footer section  default footer for all pages-->
+		<footer class="footer1">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+
+						<ul class="list-unstyled clear-margins"><!-- widgets -->
+	                    	<li class="widget-container widget_nav_menu"><!-- widgets list -->
+	                            <h1 class="title-widget">Information</h1>
+	                            <ul>
+	                            	<li><a  href="#"><i class="fa fa-angle-double-right"></i> About Us</a></li>
+	                                <li><a  href="#"><i class="fa fa-angle-double-right"></i> Contact Us</a></li>
+	                                <li><a  href="#"><i class="fa fa-angle-double-right"></i> Success Stories</a></li>
+	                                <li><a  href="#"><i class="fa fa-angle-double-right"></i> PG Courses</a></li>
+	                                <li><a  href="#"><i class="fa fa-angle-double-right"></i> Achiever's Batch</a></li>
+	                                <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Regular Batch</a></li>
+	                                <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Test & Discussion</a></li>
+	                                <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Fast Track T & D</a></li>
+	                            </ul>
+							</li>
+	                    </ul>
+
+					</div>
+
+					<div class="col-md-3">
+						
+						<ul class="list-unstyled clear-margins"><!-- widgets -->
+	                    	<li class="widget-container widget_nav_menu"><!-- widgets list -->
+	                            <h1 class="title-widget">Account</h1>
+	                            <ul>
+	                            	<li><a  href="#"><i class="fa fa-angle-double-right"></i> About Us</a></li>
+	                                <li><a  href="#"><i class="fa fa-angle-double-right"></i> Contact Us</a></li>
+	                                <li><a  href="#"><i class="fa fa-angle-double-right"></i> Success Stories</a></li>
+	                                <li><a  href="#"><i class="fa fa-angle-double-right"></i> PG Courses</a></li>
+	                                <li><a  href="#"><i class="fa fa-angle-double-right"></i> Achiever's Batch</a></li>
+	                                <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Regular Batch</a></li>
+	                                <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Test & Discussion</a></li>
+	                                <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Fast Track T & D</a></li>
+	                            </ul>
+							</li>
+	                    </ul>
+
+					</div>
+
+					<div class="col-md-3">
+						
+						<ul class="list-unstyled clear-margins"><!-- widgets -->
+	                    	<li class="widget-container widget_nav_menu"><!-- widgets list -->
+	                            <h1 class="title-widget">Extras</h1>
+	                            <ul>
+	                            	<li><a  href="#"><i class="fa fa-angle-double-right"></i> About Us</a></li>
+	                                <li><a  href="#"><i class="fa fa-angle-double-right"></i> Contact Us</a></li>
+	                                <li><a  href="#"><i class="fa fa-angle-double-right"></i> Success Stories</a></li>
+	                                <li><a  href="#"><i class="fa fa-angle-double-right"></i> PG Courses</a></li>
+	                                <li><a  href="#"><i class="fa fa-angle-double-right"></i> Achiever's Batch</a></li>
+	                                <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Regular Batch</a></li>
+	                                <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Test & Discussion</a></li>
+	                                <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Fast Track T & D</a></li>
+	                            </ul>
+							</li>
+	                    </ul>
+					</div>
+
+					<div class="col-md-3">
+						
+						<ul class="list-unstyled clear-margins"><!-- widgets -->
+	                    	<li class="widget-container widget_nav_menu"><!-- widgets list -->
+	                            <h1 class="title-widget">Stay Connected</h1> 
+							</li>
+	                    </ul>
+					</div>
+
+					<!-- <div class="col-md-3" id="adbox">
+						<h1>ad box</h1>
+					</div> -->
+
+				</div>
+
+				<div class="row" id="pay_info">
+					<div class="col-md-5">
+						<p>PAYMENT METHOD</p>
+						<img src="src\payment.png" alt="Buy Mobile Payment">
+					</div>
+					<div class="col-md-4">
+						<p>100% SECURE PAYMENT</p>
+						<img src="src\Spayment.jpg" alt="Buy Mobile Secure Payment">
+					</div>
+					<div class="col-md-3">
+						<p>SHIPPING</p>
+						<img src="src\delivery_y.jpg" alt="Buy Mobile Shipping">
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-12">
+						<h5>Online Shopping Bangladesh</h5>
+						<p>Reaching crowded malls, endless traffic jams and long line. From mobiles phones too Accessories, you can buy just about anything online. And when we say online, we mean Buymobile.com.bd, one of Bangladesh best online shopping destinations.</p>
+						<h5>Shopping On Buymobile.com.bd</h5>
+						<p> Here At Buymobile.Com.Bd We Understand Smartphone, We Understand Our Customers And We Know What You Want. Our Young And Dynamic Team Of Tech-Enthusiasts Is Committed To Providing The Latest Handsets On The Best Price Plans So That Everyone Can Love Their Smartphones As Much As We Love Ours!</p>
+						<h5>Shokol Iccha Puroner Somoy Akhon with Buymobile.com.bd</h5>
+						<p> At Buymobile.com.bd , we believe that a wish is a desire that should be fulfilled for every Bangali. And that is why you'll see that there's always something for you to shop for. We Have Got Great Relationships With Manufacturers And Networks Which Ensure We Can Cut Out The Middlemen And Provide You With Some Of The Best Offers Out There. But It Is Not All About Being Best Buddies With The Top-Dogs, It Is Also About Know-How And That’s Something We Have In Abundance.the list is as endless as the potential long line that you would end up in should you happen to brave the crowd at the end of your shopping trip at a mall.</p>
+						<h5>Enjoy Delightful Prices</h5>
+						<p> For 'Every Wish Fulfilled' to happen, we at Buymobile.com.bd understand that prices can put you off. And that is why we have round-the-clock discounts and amazing prices for you to enjoy. With options like Deals-of-the-Day(To get too your new handset at a price that’s right for you), But we know our stuff, Whether It’s Talking Operating System, Megapixels Or Battery, So We’re Always On Hand To Provide Expert Advice. What’s More, We’ve Kept Our service narrow enough to be able to provide a personal level of service, so you’ve never made to fell like ‘you’re just a number.</p>
+						<h5> Safe and Secure Shopping Every Time</h5>
+						<p> When It Comes To Online Transactions,Buymobile Ensures That All Credit/Debit Card And Net Banking Transactions Are Done Through Secure And Trusted Gateways. All Your Bank Details Are Safe And Secure.You Can Shop With Confidence, Safe In Knowledge, We’ve Passed The Stringent Tests In Online Security And Customer Care.</p>
+						<p>Buymobile Offers A Cash On Delivery Option If You Need An Easier Payment Method And Excellent After Sales Services Too. If You Have Any Issues With Your Purchase, The Easy Exchange And Replacement Policies Comes To Your Rescue.</p>
+						<h5>Shop on the App</h5>
+						<p> Oh yes, we re available on the small screen too. Just go to Google Play Store or Apple App Store, download the Buymobile app onto your smartphone or tablet, and enjoy shopping on the go. The app has an interactive and easy user interface and you'll be able to enjoy app-only deals, get notifications about offers and order status, and plenty more. Download the app and you'll know what we are talking about.</p>
+					</div>
+
+				</div>
+			</div>
+			<div class="container-fluid" id="f_footer">
+				<p>Copyright © 2017 eCom.com.bd All rights reserved.</p>
+			</div>
+		</footer>
+		<button class="back-to-top" title="Go to top"><span class="fa fa-angle-double-up"></span></button>
+	</body>
+
+	<script>
+		jQuery(document).ready(function() {
+		    var offset = 220;
+		    var duration = 500;
+		    jQuery(window).scroll(function() {
+		        if (jQuery(this).scrollTop() > offset) {
+		            jQuery('.back-to-top').fadeIn(duration);
+		        } else {
+		            jQuery('.back-to-top').fadeOut(duration);
+		        }
+		    });
+		    
+		    jQuery('.back-to-top').click(function(event) {
+		        event.preventDefault();
+		        jQuery('html, body').animate({scrollTop: 0}, duration);
+		        return false;
+		    })
+		});
+	</script>
+
+	<script>
+		var myIndex = 0;
+		carousel();
+
+		function carousel() {
+		    var i;
+		    var x = document.getElementsByClassName("mySlides");
+		    var dots = document.getElementsByClassName("demo");
+		    for (i = 0; i < x.length; i++) {
+		       x[i].style.display = "none";  
+		    }
+		    myIndex++;
+		    if (myIndex > x.length) {myIndex = 1}    
+		    x[myIndex-1].style.display = "block";
+
+			for (i = 0; i < dots.length; i++) {
+		     dots[i].className = dots[i].className.replace(" w3-white", "");
+			  }
+			  x[myIndex-1].style.display = "block";  
+			  dots[myIndex-1].className += " w3-white";
+
+		    setTimeout(carousel, 6000); // Change image every 6 seconds
+		}
+
+		showDivs(myIndex);
+
+		function currentDiv(n) {
+		  showDivs(myIndex = n);
+		}
+
+		function showDivs(n) {
+		  var i;
+		  var x = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("demo");
+		  if (n > x.length) {myIndex = 1}    
+		  if (n < 1) {myIndex = x.length}
+		  for (i = 0; i < x.length; i++) {
+		     x[i].style.display = "none";  
+		  }
+		  for (i = 0; i < dots.length; i++) {
+		     dots[i].className = dots[i].className.replace(" w3-white", "");
+		  }
+		  x[myIndex-1].style.display = "block";  
+		  dots[myIndex-1].className += " w3-white";
+		}
+	</script>
+	<!-- padding between navbar and top content bar -->
+	<script>
+	    $(document).ready(function(){
+	        $(document.body).css('padding-top', $('#topnavbar').height() + 1);
+	        $(window).resize(function(){
+	            $(document.body).css('padding-top', $('#topnavbar').height() + 1);
+	        });
+	    });
+	</script>
+
+	<!-- tips box  -->
+	<script>
+		$(document).ready(function(){
+		    $('[data-toggle="tooltip"]').tooltip();   
+		});
+	</script>
+
+	<!-- image slide for product -->
+	<script type="text/javascript">
+
+        var images = document.getElementById("imgDiv")
+                             .getElementsByTagName("img");
+
+        for (var i = 0; i < images.length; i++)
+        {
+            images[i].onmouseover = function ()
+            {
+                this.style.cursor = 'hand';
+                this.style.borderColor = 'red';
+            }
+            images[i].onmouseout = function ()
+            {
+                this.style.cursor = 'pointer';
+                this.style.borderColor = 'grey';
+            }
+        }
+
+        function changeImageOnClick(event)
+        {
+            event = event || window.event;
+            var targetElement = event.target || event.srcElement;
+
+            if (targetElement.tagName == "IMG")
+            {
+                mainImage.src = targetElement.getAttribute("src");
+            }
+        }
+    </script>
+
+    <!-- show/hide emi process -->
+    <script type="text/javascript"> 
+	    document.onreadystatechange = function ()
+	    	{ 
+				if (document.readyState == "complete") 
+	    		{ 
+	    			// document.getElementById("trusa").style.display = 'none'; 
+	    			document.getElementById("showMonth").style.display = 'none';
+	    		} 
+			}; 
+			
+			function onoptionselected() 
+			{ 
+				var option = document.getElementById("input-option440").value; 
+					
+				if (option == "1") { 
+					document.getElementById("showMonth").style.display = 'block'; 
+				 	// document.getElementById("trcanada").style.display = 'none';
+				} else { 
+					document.getElementById("showMonth").style.display = 'none'; 
+				 	// document.getElementById("showMonth").style.display = 'none';
+				} 
+	    	} 
+    </script>
+
+</html>
