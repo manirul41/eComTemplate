@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+		<title>eCom::Home</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<!-- <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script> -->
+		<script type="text/javascript" src="cus_bootstrap/cus_js/custom.js"></script>
+		<link href="cus_bootstrap/cus_css/custom.css" rel="stylesheet">
+
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+	    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<div id="colorbody">
+			<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="topnavbar">
+			  <div class="container-fluid">
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>                        
+			      </button>
+			      <a class="navbar-brand" href="#">eCom</a>
+			    </div>
+			    <div class="collapse navbar-collapse" id="myNavbar">
+			      <ul class="nav navbar-nav">
+			        <li class="active"><a href="#">Home</a></li>
+			        <li class="dropdown">
+			          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+			          <ul class="dropdown-menu">
+			            <li><a href="#">Page 1-1</a></li>
+			            <li><a href="#">Page 1-2</a></li>
+			            <li><a href="#">Page 1-3</a></li>
+			          </ul>
+			        </li>
+			        <li><a href="#">Page 2</a></li>
+			        <li><a href="#">Page 3</a></li>
+			      </ul>
+			       <form class="navbar-form navbar-left">
+					  <div class="input-group">
+					    <input type="text" class="form-control" placeholder="Search">
+					    <div class="input-group-btn">
+					      <button class="btn btn-default" type="submit">
+					        <i class="glyphicon glyphicon-search"></i>
+					      </button>
+					    </div>
+					  </div>
+					</form> 
+			      <ul class="nav navbar-nav navbar-right">
+			      	<li><a href="#"><button type="button" class="btn btn-primary fa fa-shopping-cart"> (0) Cart</button></a></li>
+			        <li><a href="registration_form.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+			        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+			      </ul>
+			    </div>
+			  </div>
+			</nav>
+
+			<div class="container">
+				
+			</div>
+		</div>
+
+		<!-- footer section  default footer for all pages-->
+		<footer class="footer1">
+			<div class="container">
+				<div class="row">
+					
+				</div>
+			</div>
+			<div class="container-fluid" id="f_footer">
+				<p>Copyright © 2017 eCom.com.bd All rights reserved.</p>
+			</div>
+		</footer>
+		<button class="back-to-top" title="Go to top"><span class="fa fa-angle-double-up"></span></button>
+	</body>
+
+	<script>
+		jQuery(document).ready(function() {
+		    var offset = 220;
+		    var duration = 500;
+		    jQuery(window).scroll(function() {
+		        if (jQuery(this).scrollTop() > offset) {
+		            jQuery('.back-to-top').fadeIn(duration);
+		        } else {
+		            jQuery('.back-to-top').fadeOut(duration);
+		        }
+		    });
+		    
+		    jQuery('.back-to-top').click(function(event) {
+		        event.preventDefault();
+		        jQuery('html, body').animate({scrollTop: 0}, duration);
+		        return false;
+		    })
+		});
+	</script>
+	<script>
+	    $(document).ready(function(){
+	        $(document.body).css('padding-top', $('#topnavbar').height() + 1);
+	        $(window).resize(function(){
+	            $(document.body).css('padding-top', $('#topnavbar').height() + 1);
+	        });
+	    });
+	</script>
+
+</html>
